@@ -1,0 +1,66 @@
+is not
+is one of
+is not one of
+contains
+does not contain
+begins with
+does not begin with
+ends with
+does not end with
+is empty
+is not empty
+
+
+Σ PY
+=   	100000
+≠	100000
+<	100000
+>	100000
+≤	100000
+≥	100000
+is empty No
+is not empty ''
+
+Σ PL
+=   	0
+≠	0
+<	1000
+>	1000
+≤	1000
+≥	1000
+is empty yes
+is not empty yes
+
+
+
+
+Σ AC
+=   	0
+≠	0
+<	1000
+>	1000
+≤	1000
+≥	1000
+is empty yes
+is not empty yes
+
+Σ AC - PY
+
+Σ (AC - PY)%
+Σ AC - PL
+Σ (AC - PL)%
+Σ PL - PY
+Σ (PL - PY)%
+
+
+
+=
+≠
+<
+>
+≤
+≥
+is empty
+is not empty
+
+{"type":"css","output":"div.bf-ui-form-auto-complete.form-auto-complete.rule-value","strict":false,"value":"div.bf-ui-form-auto-complete.form-auto-complete.rule-value"}"

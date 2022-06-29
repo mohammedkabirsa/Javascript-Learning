@@ -1,0 +1,190 @@
+// Using var
+
+var name = 'Kabir'
+console.log(name)
+
+// Using let - Naother form of declaring variable
+
+let x = 5
+let y = 6
+let z = x + y
+console.log('The Sum of two Numbers is:' + ' ' + z)
+
+// Using const
+//These are constant values and cannot be changed.
+
+const price1 = 50
+const price2 = 60
+let total = price1 + price2
+console.log('The price of two Goods is:' + ' ' + total)
+
+// Using directly
+let x1 = 5
+let y1 = 6
+let z1 = x1 + y1
+console.log(x1 + y1)
+
+/*******************************Operators***********************/
+
+let numb1 = 5 // assign the value 5 to x
+let numb2 = 2 // assign the value 2 to y
+let numb3 = x + y // assign the value 7 to z (5 + 2)
+
+//The assignment operator (=)
+// The addition operator (+)
+//The multiplication operator (*)
+let x2 = 5 + 5
+let mul = 6 * 6
+let y2 = '5' + 5
+let z2 = 'Hello' + 5
+console.log(z2)
+
+//Increment ++ increases a variable by 1
+let counterInc = 2
+counterInc++ // works the same as counter = counter + 1, but is shorter
+console.log(counterInc) // 3
+
+//Decrement -- decreases a variable by 1:
+let counterDec = 2
+counterDec-- // works the same as counter = counter - 1, but is shorter
+console.log(counterDec) // 1
+
+//compare numbers
+let a = 10,
+  b = 20
+
+console.log(a >= b) // false
+console.log(a == 10) // true
+
+//compare strings
+let name1 = 'alice',
+  name2 = 'bob'
+
+let result = name1 < name2
+console.log(result) // true
+console.log(name1 == 'alice') // true
+
+//strict equal operator vs Equal Operators
+console.log('10' == 10) // true
+console.log('10' === 10) // false
+
+/**************************************OBJECTS******************************/
+let user = {
+  // an object - dot notation
+  name: 'Mohammed Kabir', // by key "name" store value "John"
+  age: 24, // by key "age" store value 30
+}
+// get property values of the object:
+console.log(user.name) // My Name Will be retured
+console.log(user.age) // My age Will be returned
+
+// an object - Array notation
+
+let person = {
+  firstName: 'John',
+  lastName: 'Doe',
+}
+
+console.log(person['firstName'])
+console.log(person['lastName'])
+
+//The in operator check if a property exists in an object.
+let employee = {
+  firstName: 'Peter',
+  lastName: 'Doe',
+  employeeId: 1,
+}
+
+console.log('ssn' in employee)
+console.log('employeeId' in employee)
+
+/***************IF -ELSE - ELSE IF STATEMENTS**********************/
+const time = new Date().getHours()
+let greeting
+if (time < 10) {
+  greeting = 'Good morning'
+} else if (time < 20) {
+  greeting = 'Good day'
+} else {
+  greeting = 'Good evening'
+}
+
+console.log(greeting)
+
+//Switch CAses
+let day
+switch (new Date().getDay()) {
+  case 0:
+    day = 'Sunday'
+    break
+  case 1:
+    day = 'Monday'
+    break
+  case 2:
+    day = 'Tuesday'
+    break
+  case 3:
+    day = 'Wednesday'
+    break
+  case 4:
+    day = 'Thursday'
+    break
+  case 5:
+    day = 'Friday'
+    break
+  case 6:
+    day = 'Saturday'
+}
+console.log(day)
+
+/*******************************FOR LOOP***************** */
+
+//A simple program to display text 5 times
+const n = 5
+
+// looping from i = 1 to 5
+for (let i = 1; i <= n; i++) {
+  console.log(`I am Learning JS`)
+}
+
+/*******************************WHILE - DO WHILE LOOP***************** */
+
+// program to display numbers
+let i = 1
+const no = 5
+
+// do...while loop from 1 to 5
+do {
+  console.log(i)
+  i++
+} while (i <= no)
+
+//And while and do...while loops are usually used when the number of iterations are unknown.
+//A for loop is usually used when the number of iterations is known.
+
+/******ARRAYS************************/
+// empty array
+const myList = []
+
+// array of numbers
+const numberArray = [2, 4, 6, 8]
+
+// array of strings
+const stringArray = ['eat', 'work', 'sleep']
+
+// array with mixed data types
+const newData = ['work', 'exercise', 1, true]
+
+//Array Examples****************************************
+
+let dailyActivities1 = ['eat', 'sleep']
+
+// add an element at the end
+dailyActivities.push('exercise') //The push() method adds an element at the end of the array
+console.log(dailyActivities) //  ['eat', 'sleep', 'exercise']
+
+let dailyActivities = ['eat', 'sleep']
+
+//add an element at the start
+dailyActivities.unshift('work') //The unshift() method adds an element at the beginning of the array
+console.log(dailyActivities) // ['work', 'eat', 'sleep']
